@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+  <TextView android:id="@+id/vibrationShow"
+    android:text="@string/snHint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  />
+  <Button android:id="@+id/vibrationBtn"
+    android:text="@string/setScreen"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="40dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"/>
+</LinearLayout>

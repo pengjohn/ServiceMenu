@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    > 
+    <TextView  
+    android:id="@+id/p_sen"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="20dip"
+    android:paddingTop="30dip"
+    />
+    <TextView  
+    android:id="@+id/p_sen_value_min"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_gravity="bottom"
+    android:textSize="14dip"
+    android:paddingTop="180dip"
+    android:text="@string/psensor_value_min"
+    />    
+
+    <TextView  
+    android:id="@+id/p_sen_value"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_gravity="bottom"
+    android:textSize="20dip"
+    android:textColor="#ff0000"
+    android:text="@string/psensor_value"
+    />    
+    <TextView  
+    android:id="@+id/p_sen_value_max"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_gravity="bottom"
+    android:textSize="14dip"
+    android:text="@string/psensor_value_max"
+    />    
+
+    <TextView  
+    android:id="@+id/p_sen_value_old"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_gravity="bottom"
+    android:textSize="16dip"
+    android:paddingTop="20dip"
+    android:text="@string/psensor_value_old"
+    />    
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom">
+    <Button
+    android:id="@+id/psen_btn"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:text="@string/psensor_adu">
+    </Button>
+    </LinearLayout>
+</LinearLayout>

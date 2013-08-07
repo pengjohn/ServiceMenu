@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <!--
+        Copyright (c) 2011, QUALCOMM Incorporated.
+        All Rights Reserved.
+        QUALCOMM Proprietary and Confidential.
+        Developed by QRD Engineering team.
+    -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/fm_frequency"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36dip"
+        android:paddingTop="20dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center">
+    </TextView>
+
+    <Button
+        android:id="@+id/fm_search"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dip"
+        android:text="@string/auto_search">
+    </Button>
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom">
+    <Button
+    android:id="@+id/fm_success"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight = "1"
+    android:layout_gravity="bottom"
+    android:text="@string/auto_success">
+    </Button>
+    <Button
+    android:id="@+id/fm_fail"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight = "1"
+    android:layout_gravity="bottom"
+    android:text="@string/auto_fail">
+    </Button>
+    </LinearLayout>
+
+</LinearLayout>

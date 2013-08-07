@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    > 
+<TextView  
+    android:id="@+id/fail_text"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="20dip"
+    />
+    <TextView
+    android:id="@+id/fail_id"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20dip"
+    android:text="@string/auto_menu">
+    </TextView>
+    <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20dip"
+    android:text="@string/auto_finish_key">
+    </TextView>
+    <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20dip"
+    android:text="@string/text_fail">
+    </TextView>
+    
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom">
+    <Button
+    android:id="@+id/fail_continue"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight = "1"
+    android:layout_gravity="bottom"
+    android:text="@string/auto_continue">
+    </Button>
+    <Button
+    android:id="@+id/fail_retest"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight = "1"
+    android:layout_gravity="bottom"
+    android:text="@string/auto_retest">
+    </Button>
+    <Button
+    android:id="@+id/fail_report"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight = "1"
+    android:layout_gravity="bottom"
+    android:text="@string/auto_exit">
+    </Button>
+    </LinearLayout>
+</LinearLayout>

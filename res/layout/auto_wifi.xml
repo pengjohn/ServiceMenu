@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    > 
+    <TextView  
+    android:id="@+id/wifi_hint"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="20dip"
+    android:paddingTop="30dip"
+    />
+    <TextView  
+    android:id="@+id/wifi_name"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    />
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom">
+    <Button
+    android:id="@+id/wifi_success"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight = "1"
+    android:layout_gravity="bottom"
+    android:text="@string/auto_success">
+    </Button>
+    <Button
+    android:id="@+id/wifi_fail"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight = "1"
+    android:layout_gravity="bottom"
+    android:text="@string/auto_fail">
+    </Button>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

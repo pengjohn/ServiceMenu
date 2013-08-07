@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:title="@string/ForDebug">
+
+  <Preference
+    android:key="FactoryRecover"
+    android:title="@string/master_clear_title"
+    android:summary="@string/master_clear_summary">
+    <intent
+      android:action="android.intent.action.MAIN"
+      android:targetPackage="com.android.ServiceMenu"
+      android:targetClass="com.android.ServiceMenu.MasterClear" />
+  </Preference>
+
+  <!--Gozone start BID xxx zhangjinguo: add for IMEI and MEID operate -->
+  <Preference
+    android:key="IMEITest"
+    android:title="@string/imeiAndMeidTest"
+    android:summary="@string/imeiAndMeidTest">
+    <intent
+      android:action="android.intent.action.MAIN"
+      android:targetPackage="com.android.ServiceMenu"
+      android:targetClass="com.android.ServiceMenu.IMEITest" />
+  </Preference>
+  <!--Gozone end BID xxx-->
+  <Preference
+    android:key="TouchPanel"
+    android:title="@string/TouchPanel"
+    android:summary="@string/Press_to_test">
+    <intent
+      android:action="android.intent.action.MAIN"
+      android:targetPackage="com.android.ServiceMenu"
+      android:targetClass="com.android.ServiceMenu.TouchPanel" />
+  </Preference>
+
+  <Preference
+    android:key="sensorTest"
+    android:title="@string/sensorTest"
+    android:summary="@string/Press_to_test">
+    <intent
+      android:action="android.intent.action.MAIN"
+      android:targetPackage="com.android.ServiceMenu"
+      android:targetClass="com.android.ServiceMenu.SensorTest" />
+  </Preference>
+  <Preference
+    android:key="Vibration"
+    android:title="@string/Vibration"
+    android:summary="@string/Press_to_test">
+    <intent
+      android:action="android.intent.action.MAIN"
+      android:targetPackage="com.android.ServiceMenu"
+      android:targetClass="com.android.ServiceMenu.Vibration" />
+  </Preference>  
+  <Preference
+    android:key="Battery"
+    android:title="@string/battery_power"
+    android:summary="@string/Press_to_test">
+    <intent
+      android:action="android.intent.action.MAIN"
+      android:targetPackage="com.android.ServiceMenu"
+      android:targetClass="com.android.ServiceMenu.BatteryTest" />
+  </Preference>  
+  <Preference
+    android:key="TestUrl"
+    android:title="@string/test_url"
+    android:summary="@string/Press_to_test">
+    <intent
+      android:action="android.intent.action.MAIN"
+      android:targetPackage="com.android.ServiceMenu"
+      android:targetClass="com.android.ServiceMenu.TestUrl" />
+  </Preference>  
+  <ListPreference
+      android:key="BootanimationChange"
+      android:title="@string/bootanimation_change"
+      android:entries="@array/bootanimation_list_entries"
+      android:entryValues="@array/bootanimation_entries_value"
+      android:dialogTitle="@string/bootanimation_change"
+  >
+  </ListPreference>
+  <Preference
+    android:key="UsbDebug"
+    android:title="@string/usb_debug"
+    android:summary="@string/Press_to_test">
+  </Preference>
+  <ListPreference
+      android:key="otg_switch"
+      android:title="@string/otg_switch"
+      android:entries="@array/otg_list_entries"
+      android:entryValues="@array/otg_entries_value"
+      android:dialogTitle="@string/otg_switch"
+  >
+  </ListPreference>  
+<!--
+  <ListPreference
+      android:key="CrashDump"
+      android:title="@string/crash_dump_switch"
+      android:entries="@array/crash_dump_list_entries"
+      android:entryValues="@array/crash_dump_entries_value"
+      android:dialogTitle="@string/crash_dump_switch"
+  >
+  </ListPreference>  
+  <Preference
+    android:key="TestCpCrash"
+    android:title="@string/test_cp_crash"
+    android:summary="@string/Press_to_test">
+  </Preference>
+  <Preference
+    android:key="TestApCrash"
+    android:title="@string/test_ap_crash"
+    android:summary="@string/Press_to_test">
+  </Preference>  
+-->  
+<!--
+  <Preference
+    android:key="NfcTest"
+    android:title="@string/nfcTest"
+    android:summary="@string/Press_to_test">
+    <intent
+      android:action="android.intent.action.MAIN"
+      android:targetPackage="com.broadcom.apps.testframework"
+      android:targetClass="com.broadcom.apps.testframework.SecElementTesterActivity" />
+  </Preference>
+  -->
+<!--
+  <Preference
+    android:key="AutoTest"
+    android:title="@string/AutoTest"
+    android:summary="@string/Press_to_test">
+    <intent
+      android:action="android.intent.action.MAIN"
+      android:targetPackage="com.android.ServiceMenu"
+      android:targetClass="com.android.ServiceMenu.AutoTest" />
+  </Preference>
+
+  <Preference
+    android:key="ManuTest"
+    android:title="@string/ManuTest"
+    android:summary="@string/Press_to_test">
+    <intent
+      android:action="android.intent.action.MAIN"
+      android:targetPackage="com.android.ServiceMenu"
+      android:targetClass="com.android.ServiceMenu.ManuTest" />
+  </Preference>
+
+  <PreferenceScreen
+    android:key="PSensorTime"
+    android:title="@string/psen_time"
+    android:summary="@string/Press_to_test">
+    <intent android:action="android.intent.action.MAIN"
+      android:targetPackage="com.android.ServiceMenu"
+      android:targetClass="com.android.ServiceMenu.PSensorTime" />
+  </PreferenceScreen>
+
+  <PreferenceScreen
+    android:key="PSensorAdjust"
+    android:title="@string/PSensorAdu"
+    android:summary="@string/Press_to_test">
+    <intent android:action="android.intent.action.MAIN"
+      android:targetPackage="com.android.ServiceMenu"
+      android:targetClass="com.android.ServiceMenu.PSensorAdu" />
+  </PreferenceScreen>
+
+  <PreferenceScreen
+    android:key="ScreenRotation"
+    android:title="@string/ScreenRotation"
+    android:summary="@string/Press_to_test">
+    <intent android:action="android.intent.action.MAIN"
+      android:targetPackage="com.android.ServiceMenu"
+      android:targetClass="com.android.ServiceMenu.ScreenRotation" />
+  </PreferenceScreen>
+
+  <PreferenceScreen
+    android:key="MemoryTest"
+    android:title="@string/memory_test"
+    android:summary="@string/Press_to_test">
+    <intent android:action="android.intent.action.MAIN"
+      android:targetPackage="com.android.ServiceMenu"
+      android:targetClass="com.android.ServiceMenu.MemoryTest" />
+  </PreferenceScreen>
+
+  <PreferenceScreen
+    android:key="NVTest"
+    android:title="@string/nv_test"
+    android:summary="@string/Press_to_test">
+    <intent android:action="android.intent.action.MAIN"
+      android:targetPackage="com.android.ServiceMenu"
+      android:targetClass="com.android.ServiceMenu.NVTest" />
+  </PreferenceScreen>
+  <PreferenceScreen
+    android:key="ElectricityTest"
+    android:title="@string/ElectricityTest"
+    android:summary="@string/Press_to_test">
+    <intent android:action="android.intent.action.MAIN"
+      android:targetPackage="com.android.ServiceMenu"
+      android:targetClass="com.android.ServiceMenu.ElectricityTest" />
+  </PreferenceScreen>
+
+  <PreferenceScreen
+    android:key="SensorAdjust"
+    android:title="@string/SensorAdjust"
+    android:summary="@string/Press_to_test">
+    <intent android:action="android.intent.action.MAIN"
+      android:targetPackage="com.android.ServiceMenu"
+      android:targetClass="com.android.ServiceMenu.SensorAdjust" />
+  </PreferenceScreen>
+-->
+</PreferenceScreen>

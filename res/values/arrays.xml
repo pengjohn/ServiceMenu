@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+<string-array name="crash_dump_list_entries">
+    <item>保存</item>
+    <item>不保存(立刻重启)</item>
+</string-array>
+
+<string-array name="crash_dump_entries_value">
+    <item>On</item>
+   <item>Off</item>
+</string-array>
+
+<string-array name="bootanimation_list_entries">
+    <item>关闭</item>
+    <item>启用</item>
+</string-array>
+
+<string-array name="bootanimation_entries_value">
+   <item>Off</item>
+   <item>On</item>
+</string-array>
+
+<string-array name="otg_list_entries">
+    <item>关闭</item>
+    <item>启用</item>
+</string-array>
+
+<string-array name="otg_entries_value">
+   <item>Off</item>
+   <item>On</item>
+</string-array>
+
+<!-- All item -->
+<string-array name="activity_list_all" translatable="false">
+		<item>com.android.ServiceMenu.AutoVersion</item>
+		<item>com.android.ServiceMenu.AutoTraceInfo</item>
+		<item>com.android.ServiceMenu.AutoTouch</item>
+		<item>com.android.ServiceMenu.AutoKey</item>
+		<item>com.android.ServiceMenu.AutoFlash</item>
+		<item>com.android.ServiceMenu.AutoBacklight</item>
+		<item>com.android.ServiceMenu.AutoBrightness</item>
+		<item>com.android.ServiceMenu.AutoPalette</item>
+		<item>com.android.ServiceMenu.AutoVibrate</item>
+		<item>com.android.ServiceMenu.AutoMusic</item>
+		<item>com.android.ServiceMenu.AutoReceiver</item>
+		<item>com.android.ServiceMenu.AutoAudioloop</item>
+		<item>com.android.ServiceMenu.AutoUsb</item>
+		<item>com.android.ServiceMenu.AutoEarphoneInsert</item>
+		<item>com.android.ServiceMenu.AutoEarphoneMusic</item>
+		<item>com.android.ServiceMenu.AutoEarphoneKey</item>
+		<item>com.android.ServiceMenu.AutoEarphone</item>
+		<item>com.android.ServiceMenu.AutoFm</item>
+		<item>com.android.ServiceMenu.AutoEarphoneRemove</item>
+		<item>com.android.ServiceMenu.AutoSim</item>
+		<item>com.android.ServiceMenu.AutoSd</item>
+		<item>com.android.ServiceMenu.AutoGSensor</item>
+		<item>com.android.ServiceMenu.AutoMSensor</item>
+		<item>com.android.ServiceMenu.AutoGyroscopeSensor</item>
+		<item>com.android.ServiceMenu.AutoPSensor</item>
+		<item>com.android.ServiceMenu.AutoLSensor</item>
+		<item>com.android.ServiceMenu.AutoBattery</item>
+		<item>com.android.ServiceMenu.AutoBT</item>
+		<item>com.android.ServiceMenu.AutoWiFi</item>
+		<item>com.android.ServiceMenu.AutoGPS</item>
+		<item>com.android.ServiceMenu.AutoCamera</item>
+</string-array>
+
+<string-array name="activity_list_all_title" translatable="false">
+		<item>@string/auto_version</item>
+		<item>@string/auto_trace_info_title</item>
+		<item>@string/auto_touch</item>
+		<item>@string/auto_key</item>
+		<item>@string/auto_flash</item>
+		<item>@string/auto_key_backlight</item>
+		<item>@string/auto_brightness</item>
+		<item>@string/auto_palette</item>
+		<item>@string/auto_vibrate</item>
+		<item>@string/audio_speaker</item>
+		<item>@string/auto_receiver</item>
+		<item>@string/auto_audioloop</item>
+		<item>@string/auto_usb</item>
+		<item>@string/auto_earphone_insert</item>
+		<item>@string/auto_earphone_music</item>
+		<item>@string/auto_earphone_key</item>
+		<item>@string/auto_earphone_audioloop</item>
+		<item>@string/auto_fm</item>
+		<item>@string/auto_earphone_remove</item>
+		<item>@string/auto_sim</item>
+		<item>@string/auto_sd</item>
+		<item>@string/auto_gsensor</item>
+		<item>@string/auto_msensor</item>
+		<item>@string/auto_gyroscope</item>
+		<item>@string/auto_psensor</item>
+		<item>@string/auto_lsensor</item>
+		<item>@string/auto_battery</item>
+		<item>@string/auto_bt</item>
+		<item>@string/auto_wifi</item>
+		<item>@string/auto_gps</item>
+		<item>@string/auto_camera</item>
+</string-array>
+
+<!-- normal -->
+
+<string-array name="activity_list_normal" translatable="false">
+		<item>com.android.ServiceMenu.AutoVersion</item>
+		<item>com.android.ServiceMenu.AutoTouch</item>
+		<item>com.android.ServiceMenu.AutoKey</item>
+		<item>com.android.ServiceMenu.AutoFlash</item>
+		<item>com.android.ServiceMenu.AutoBacklight</item>
+		<item>com.android.ServiceMenu.AutoBrightness</item>
+		<item>com.android.ServiceMenu.AutoPalette</item>
+		<item>com.android.ServiceMenu.AutoVibrate</item>
+		<item>com.android.ServiceMenu.AutoMusic</item>
+		<item>com.android.ServiceMenu.AutoReceiver</item>
+		<item>com.android.ServiceMenu.AutoAudioloop</item>
+		<item>com.android.ServiceMenu.AutoUsb</item>
+		<item>com.android.ServiceMenu.AutoEarphoneInsert</item>
+		<item>com.android.ServiceMenu.AutoEarphoneMusic</item>
+		<item>com.android.ServiceMenu.AutoEarphoneKey</item>
+		<item>com.android.ServiceMenu.AutoEarphone</item>
+		<item>com.android.ServiceMenu.AutoFm</item>
+		<item>com.android.ServiceMenu.AutoEarphoneRemove</item>
+		<item>com.android.ServiceMenu.AutoSim</item>
+		<item>com.android.ServiceMenu.AutoSd</item>
+		<item>com.android.ServiceMenu.AutoGSensor</item>
+		<item>com.android.ServiceMenu.AutoMSensor</item>
+		<item>com.android.ServiceMenu.AutoPSensor</item>
+		<item>com.android.ServiceMenu.AutoLSensor</item>
+		<item>com.android.ServiceMenu.AutoBattery</item>
+		<item>com.android.ServiceMenu.AutoBT</item>
+		<item>com.android.ServiceMenu.AutoWiFi</item>
+		<item>com.android.ServiceMenu.AutoGPS</item>
+		<item>com.android.ServiceMenu.AutoCamera</item>
+</string-array>
+
+<string-array name="activity_list_normal_title" translatable="false">
+		<item>@string/auto_version</item>
+		<item>@string/auto_touch</item>
+		<item>@string/auto_key</item>
+		<item>@string/auto_flash</item>
+		<item>@string/auto_key_backlight</item>
+		<item>@string/auto_brightness</item>
+		<item>@string/auto_palette</item>
+		<item>@string/auto_vibrate</item>
+		<item>@string/audio_speaker</item>
+		<item>@string/auto_receiver</item>
+		<item>@string/auto_audioloop</item>
+		<item>@string/auto_usb</item>
+		<item>@string/auto_earphone_insert</item>
+		<item>@string/auto_earphone_music</item>
+		<item>@string/auto_earphone_key</item>
+		<item>@string/auto_earphone_audioloop</item>
+		<item>@string/auto_fm</item>
+		<item>@string/auto_earphone_remove</item>
+		<item>@string/auto_sim</item>
+		<item>@string/auto_sd</item>
+		<item>@string/auto_gsensor</item>
+		<item>@string/auto_msensor</item>
+		<item>@string/auto_psensor</item>
+		<item>@string/auto_lsensor</item>
+		<item>@string/auto_battery</item>
+		<item>@string/auto_bt</item>
+		<item>@string/auto_wifi</item>
+		<item>@string/auto_gps</item>
+		<item>@string/auto_camera</item>
+</string-array>
+
+<!-- pcb -->
+<string-array name="activity_list_pcba" translatable="false">
+		<item>com.android.ServiceMenu.AutoKey</item>
+		<item>com.android.ServiceMenu.AutoFlash</item>
+		<item>com.android.ServiceMenu.AutoBacklight</item>
+		<item>com.android.ServiceMenu.AutoVibrate</item>
+		<item>com.android.ServiceMenu.AutoMusic</item>
+		<item>com.android.ServiceMenu.AutoReceiver</item>
+		<item>com.android.ServiceMenu.AutoAudioloop</item>
+		<item>com.android.ServiceMenu.AutoUsb</item>
+		<item>com.android.ServiceMenu.AutoEarphoneInsert</item>
+		<item>com.android.ServiceMenu.AutoEarphoneMusic</item>
+		<item>com.android.ServiceMenu.AutoEarphoneKey</item>
+		<item>com.android.ServiceMenu.AutoEarphone</item>
+		<item>com.android.ServiceMenu.AutoFm</item>
+		<item>com.android.ServiceMenu.AutoEarphoneRemove</item>
+		<item>com.android.ServiceMenu.AutoSim</item>
+		<item>com.android.ServiceMenu.AutoSd</item>
+		<item>com.android.ServiceMenu.AutoGSensor</item>
+		<item>com.android.ServiceMenu.AutoMSensor</item>
+		<item>com.android.ServiceMenu.AutoPSensor</item>
+		<item>com.android.ServiceMenu.AutoLSensor</item>
+		<item>com.android.ServiceMenu.AutoBattery</item>
+		<item>com.android.ServiceMenu.AutoBT</item>
+		<item>com.android.ServiceMenu.AutoWiFi</item>
+		<item>com.android.ServiceMenu.AutoGPS</item>
+		<item>com.android.ServiceMenu.AutoCamera</item>
+</string-array>
+
+<string-array name="activity_list_pcba_title" translatable="false">
+		<item>@string/auto_key</item>
+		<item>@string/auto_flash</item>
+		<item>@string/auto_key_backlight</item>
+		<item>@string/auto_vibrate</item>
+		<item>@string/audio_speaker</item>
+		<item>@string/auto_receiver</item>
+		<item>@string/auto_audioloop</item>
+		<item>@string/auto_usb</item>
+		<item>@string/auto_earphone_insert</item>
+		<item>@string/auto_earphone_music</item>
+		<item>@string/auto_earphone_key</item>
+		<item>@string/auto_earphone_audioloop</item>
+		<item>@string/auto_fm</item>
+		<item>@string/auto_earphone_remove</item>
+		<item>@string/auto_sim</item>
+		<item>@string/auto_sd</item>
+		<item>@string/auto_gsensor</item>
+		<item>@string/auto_msensor</item>
+		<item>@string/auto_psensor</item>
+		<item>@string/auto_lsensor</item>
+		<item>@string/auto_battery</item>
+		<item>@string/auto_bt</item>
+		<item>@string/auto_wifi</item>
+		<item>@string/auto_gps</item>
+		<item>@string/auto_camera</item>
+</string-array>
+
+<!-- KeyCode list for AutoKey test  -->
+<integer-array name="KeyCodeList">
+		<item >24</item>
+		<item >25</item>
+		<item >4</item>
+		<item >3</item>
+		<item >187</item>
+</integer-array>
+
+</resources>

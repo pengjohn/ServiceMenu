@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">  
+  <CheckBoxPreference
+    android:key="toggle_backlight"
+    android:title="@string/backlight_mode"
+    android:persistent="false" />
+    <CheckBoxPreference
+    android:key="toggle_keyboardlight"
+    android:title="@string/keyboardlight_mode"
+    android:persistent="false" /> 
+    <CheckBoxPreference
+    android:key="toggle_bt"
+    android:title="@string/bt_mode"
+    android:persistent="false" /> 
+    <CheckBoxPreference
+    android:key="toggle_wifi"
+    android:title="@string/wifi_mode"
+    android:persistent="false" /> 
+    <CheckBoxPreference
+    android:key="toggle_camera"
+    android:title="@string/camera_mode"
+    android:persistent="false" />
+    <CheckBoxPreference
+    android:key="toggle_fm"
+    android:title="@string/fm_mode"
+    android:persistent="false" />
+    <CheckBoxPreference
+    android:key="toggle_TouchPanel"
+    android:title="@string/TouchPanel_mode"
+    android:summary="@string/notwork"
+    android:persistent="false" /> 
+    <CheckBoxPreference
+    android:key="toggle_PA"
+    android:title="@string/PA_mode"
+    android:persistent="false" />
+    <!--
+    <CheckBoxPreference
+    android:key="toggle_RF"
+    android:title="@string/RF_mode"
+    android:persistent="false" />
+    -->
+    <CheckBoxPreference
+    android:key="toggle_vibrate"
+    android:title="@string/vibrate_mode"
+    android:persistent="false" />
+    <CheckBoxPreference
+    android:key="toggle_ligsensor"
+    android:title="@string/ligsensor_mode"
+    android:summary="@string/notwork"
+    android:persistent="false" />
+    <CheckBoxPreference
+    android:key="toggle_accsensor"
+    android:title="@string/accsensor_mode"
+    android:persistent="false" />
+    <CheckBoxPreference
+    android:key="toggle_magsensor"
+    android:title="@string/magsensor_mode"
+    android:persistent="false" />
+    <CheckBoxPreference
+    android:key="toggle_prosensor"
+    android:title="@string/prosensor_mode"
+    android:persistent="false" />
+    <CheckBoxPreference
+    android:key="toggle_micreceiver"
+    android:title="@string/micreceiver_mode"
+    android:persistent="false" />
+    <CheckBoxPreference
+    android:key="toggle_gps"
+    android:title="@string/GPS"
+    android:persistent="false" />
+    <PreferenceScreen
+   android:key="RadioPowerTest"
+   android:title="@string/RF_mode">
+   <intent android:action="android.intent.action.MAIN"
+     android:targetPackage="com.android.ServiceMenu"
+     android:targetClass="com.android.ServiceMenu.RadioPowerTest" />
+ </PreferenceScreen>
+</PreferenceScreen>

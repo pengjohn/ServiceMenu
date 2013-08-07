@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">  
+ <TextView android:id="@+id/sen_acc"
+  android:text="@string/sen_acc"
+  android:textSize="18sp"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+ <TextView android:id="@+id/sen_accx"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_accy"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+ 
+  <TextView android:id="@+id/sen_accz"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_ori"
+  android:text="@string/sen_ori"
+  android:textSize="18sp"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_orix"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_oriy"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_oriz"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_lightshow"
+  android:text="@string/sen_light"
+  android:textSize="18sp"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_light"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_proximityshow"
+  android:text="@string/sen_proximity"
+  android:textSize="18sp"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_proximity"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_gyroscope_title"
+  android:text="@string/auto_gyroscope"
+  android:textSize="18sp"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_gyroscope_value1"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_gyroscope_value2"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_gyroscope_value3"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  
+  <TextView android:id="@+id/sen_all_info"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  
+</LinearLayout>
+  </ScrollView>

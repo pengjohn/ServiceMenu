@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    > 
+		<TextView  
+    android:id="@+id/auto_gsensor_step1"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="20dip"
+    android:paddingTop="30dip"
+    android:text="@string/auto_gsensor_step1"
+    />
+		<TextView  
+    android:id="@+id/auto_gsensor_step2"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="20dip"
+    android:text="@string/auto_gsensor_step2"
+    />
+		<TextView  
+    android:id="@+id/auto_gsensor_step3"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="20dip"
+    android:text="@string/auto_gsensor_step3"
+    />
+		<TextView  
+    android:id="@+id/auto_gsensor_step4"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="20dip"
+    android:text="@string/auto_gsensor_step4"
+    />
+		<TextView  
+    android:id="@+id/auto_gsensor_step5"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="20dip"
+    android:text="@string/auto_gsensor_step5"
+    />
+		<TextView  
+    android:id="@+id/auto_gsensor_step6"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="20dip"
+    android:text="@string/auto_gsensor_step6"
+    />
+
+		<TextView  
+    android:id="@+id/auto_gsensor_info"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="20dip"
+    />
+		<TextView  
+    android:id="@+id/auto_gsensor_x"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="20dip"
+    />
+		<TextView  
+    android:id="@+id/auto_gsensor_y"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="20dip"
+    />
+		<TextView  
+    android:id="@+id/auto_gsensor_z"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="20dip"
+    />
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_gravity="bottom">
+		
+		<Button
+			android:id="@+id/sensor_success"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom"
+			android:layout_weight = "1"
+			android:text="@string/auto_success">
+		</Button>
+		<Button 
+			android:id="@+id/sensor_fail"    
+			android:layout_width="fill_parent"    
+			android:layout_height="wrap_content"    
+			android:layout_gravity="bottom"    
+			android:layout_weight = "1"    
+			android:text="@string/auto_fail">    
+		</Button>    
+	</LinearLayout>
+
+    
+</LinearLayout>

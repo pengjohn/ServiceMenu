@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <com.android.ServiceMenu.PaletteView android:id="@+id/paletteView"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent" 
+         android:layout_weight = "0" />
+    </LinearLayout>
+    
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom"
+    >
+    <Button
+    android:id="@+id/sucBtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight = "1"
+    android:layout_gravity="bottom"
+    android:text="@string/auto_success">
+    </Button>
+    <Button
+    android:id="@+id/failBtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight = "1"
+    android:layout_gravity="bottom"
+    android:text="@string/auto_fail">
+    </Button>
+    </LinearLayout>  
+</RelativeLayout>

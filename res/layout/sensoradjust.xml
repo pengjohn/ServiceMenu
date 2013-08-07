@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView 
+  android:text="@string/sen_acc"
+  android:textSize="18sp"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+ <TextView android:id="@+id/sen_accx"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_accy"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_accz"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView 
+  android:text="@string/sen_ori"
+  android:textSize="18sp"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_orix"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_oriy"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_oriz"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView 
+  android:text="@string/sen_light"
+  android:textSize="18sp"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_lig"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView 
+  android:text="@string/sen_mag"
+  android:textSize="18sp"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_magx"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_magy"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />
+  <TextView android:id="@+id/sen_magz"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  />   
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/sen_acc"
+    />
+    <EditText
+    android:id="@+id/sen_acc"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:numeric="decimal"
+    android:hint="@string/ddr_hint"
+    >
+    </EditText>
+    <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/sen_ori"
+    />
+    <EditText
+    android:id="@+id/sen_ori"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:numeric="decimal"
+    android:hint="@string/ddr_hint"
+    >
+    </EditText>
+    <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/sen_light"
+    />
+    <EditText
+    android:id="@+id/sen_light"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:numeric="decimal"
+    android:hint="@string/ddr_hint"
+    >
+    </EditText>
+    <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/sen_mag"
+    />
+    <EditText
+    android:id="@+id/sen_mag"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:numeric="decimal"
+    android:hint="@string/ddr_hint"
+    >
+    </EditText>
+    <Button
+    android:id="@+id/setScreenBtn"
+    android:text="@string/setScreen"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    </Button>
+</LinearLayout>
+</ScrollView>
+

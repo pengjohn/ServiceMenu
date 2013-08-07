@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    > 
+    <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="20dip"
+    android:paddingTop="30dip"
+    android:text="@string/auto_finish_hint"
+    />
+  <TextView
+  android:id="@+id/finish_report_num"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textSize="20dip"/>
+  <TextView
+  android:id="@+id/finish_report_show"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textSize="20dip"/>
+     
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom">
+    <Button
+    android:id="@+id/finish_fi"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:text="@string/auto_finish">
+    </Button>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

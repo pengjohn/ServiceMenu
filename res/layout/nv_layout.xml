@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="18sp"
+    android:id="@+id/NV_status"
+    />
+    <LinearLayout
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <Button
+    android:id="@+id/NV_backup"
+    android:text="@string/NV_backup"
+    android:layout_width="80px"
+    android:layout_height="wrap_content">
+    </Button>
+    <Button
+    android:id="@+id/NV_resume"
+    android:text="@string/NV_resume"
+    android:layout_width="80px"
+    android:layout_height="wrap_content">
+    </Button>
+    <Button
+    android:id="@+id/NV_earse"
+    android:text="@string/NV_earse"
+    android:layout_width="80px"
+    android:layout_height="wrap_content">
+    </Button>
+    </LinearLayout>
+</LinearLayout>

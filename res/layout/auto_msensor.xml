@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+   
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView  
+    android:id="@+id/sensorValue"
+    android:textSize="30dip"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    />
+    <com.android.ServiceMenu.MSensorView android:id="@+id/MSensorPattern"
+         android:layout_width="fill_parent"
+         android:layout_height="400dip" 
+         android:layout_weight = "0" />
+    </LinearLayout>
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom"
+    android:layout_weight = "1"
+    >
+    <Button
+    android:id="@+id/sucBtn"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight = "1"
+    android:layout_gravity="bottom"
+    android:text="@string/auto_success">
+    </Button>
+    <Button
+    android:id="@+id/failBtn"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight = "1"
+    android:layout_gravity="bottom"
+    android:text="@string/auto_fail">
+    </Button>
+    </LinearLayout>
+
+</RelativeLayout>

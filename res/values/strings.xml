@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">工厂测试模式</string>
+    <string name="app_name_dev">开发测试模式</string>
+        
+    <string name="ManuTest">手动测试</string>
+    <string name="AutoTest">自动测试</string>
+    <string name="ForDebug">调试</string>
+
+<!--version-->
+    <string name="auto_version">版本</string>
+    <string name="Version">版本信息</string>
+    <string name="Press_to_show">按此显示</string>   
+    <string name="device_info_default">未知</string>
+    <string name="firmware_version">Android 版本</string>
+    <string name="model_number">型号</string>
+    <string name="baseband_version">基带版本</string>
+    <string name="kernel_version">内核版本</string>
+    <string name="build_number">版本号</string>
+<!--trace info-->
+		<string name="auto_trace_info_title">Trace Ability</string>
+		<string name="auto_trace_info_result">测试结果</string>
+		<string name="auto_trace_info_pt_pass">PT测试:PASS</string>
+		<string name="auto_trace_info_pt_ng">PT测试:NG</string>
+		<string name="auto_trace_info_ft_pass">FT测试:PASS</string>
+		<string name="auto_trace_info_ft_ng">FT测试:NG</string>
+		<string name="auto_trace_info_bt_pass">蓝牙/Wifi测试:PASS</string>
+		<string name="auto_trace_info_bt_ng">蓝牙/Wifi测试:NG</string>
+<!--Touch-->
+    <string name="auto_touch">触摸屏</string>
+
+<!--Key-->
+    <string name="auto_key">按键</string>
+    <string name="auto_key_left">左侧键</string>
+    <string name="auto_key_vup">音量加</string>
+    <string name="auto_key_vdn">音量减</string>
+    <string name="auto_key_back">返回键</string>
+    <string name="auto_key_menu">菜单键</string>
+    <string name="auto_key_camfoc">聚焦键</string>
+    <string name="auto_key_campho">拍照键</string>
+    <string name="auto_key_home">待机键</string>
+    <string name="auto_key_search">搜索键</string>
+    
+<!--Flash-->    
+    <string name="auto_flash">闪光灯</string>
+    <string name="auto_flash_info">请检查闪光灯</string>
+    
+<!--Backlight-->
+    <string name="auto_key_backlight">按键背光</string>
+    <string name="key_backlight_info">请检查按键背光</string>
+    
+<!--Brightness-->
+    <string name="auto_brightness">屏幕亮度</string>
+
+<!--Palette-->
+    <string name="auto_palette">LCD调色板</string>
+
+<!--Vibrate-->    
+    <string name="auto_vibrate">震动</string>
+
+<!--Music-->    
+    <string name="auto_music">音乐播放</string>
+    <string name="audio_speaker">扬声器</string>    
+    <string name="audio_speaker_info">扬声器正在播放...</string>
+
+<!--AudioLoop-->    
+    <string name="auto_audioloop">音频回环</string>
+    <string name="audiolooperHint">回环测试中...</string>
+    <string name="auto_audioloop_info">请检查音频回环</string>   
+    
+<!--USB-->    
+    <string name="auto_usb">USB</string>            
+    <string name="auto_usb_info">请按以下顺序操作</string>
+    <string name="auto_usb_step1">  1. 插入充电器</string>
+    <string name="auto_usb_step2">  2. 拔出充电器</string>
+    <string name="auto_usb_step3">  3. 插入数据线</string>
+    <string name="auto_usb_step4">  4. 拨出数据线</string>
+
+<!--Earphone insert-->
+    <string name="auto_earphone_insert">插入耳机</string>
+    <string name="auto_ear_input">请插入耳机:</string>
+    
+<!--Earphone music-->        
+    <string name="auto_earphone_music">耳机播放</string>
+    <string name="audio_left">左声道</string>
+    <string name="audio_right">右声道</string>
+<!--Earphone key-->    
+    <string name="auto_earphone_key">耳机按键</string>
+    <string name="auto_earphone_key_info">测试耳机按键</string>
+    <string name="audio_pause">暂停</string>
+    <string name="auto_earphone_music_press_hook">*耳机按键可以暂停/播放</string>
+    
+<!--Earphone audio loop-->    
+    <string name="auto_earphone_audioloop">耳机音频回环</string>
+    <string name="auto_earphone_audioloop_hint">请检查耳机音频回环</string>
+        
+<!--FM-->
+    <string name="auto_fm">收音机</string>
+    <string name="auto_fm_hint">请检查收音机功能:\n\n正在收听103.6</string>
+    <string name="auto_search">自动搜索下个频道</string>
+    <string name="auto_fm_turn">请检查收音机功能:\n\n正在收听</string>
+    <string name="auto_fm_insert_headset">请插入耳机</string>
+<!--Earphone remove-->
+    <string name="auto_earphone_remove">拔出耳机</string>
+    
+<!--SIM-->
+    <string name="auto_sim">SIM 卡</string>
+    <string name="auto_sim_found">检测到 SIM </string>
+    <string name="auto_sim_nofound">未发现 SIM </string>
+    <string name="auto_sim1_found">检测到 SIM1 </string>
+    <string name="auto_sim1_nofound">未发现 SIM1 </string>
+    <string name="auto_sim2_found">检测到 SIM2 </string>
+    <string name="auto_sim2_nofound">未发现 SIM2 </string>    
+    
+<!--SD-->
+    <string name="auto_sd">SD 卡</string>
+    <string name="auto_sd_invalid">未发现SD卡</string>
+    <string name="memory_available">可用空间:</string>
+    <string name="memory_size">总空间:</string>
+    <string name="sd_unavailable">未检测到SD卡</string>
+    <string name="sd_available">检测到SD卡</string>
+        
+<!--G-Sensor-->        
+    <string name="auto_gsensor">重力传感器</string>
+    <string name="auto_gsensor_step1">1. 竖立</string>
+    <string name="auto_gsensor_step2">2. 倒立</string>
+    <string name="auto_gsensor_step3">3. 向左</string>
+    <string name="auto_gsensor_step4">4. 向右</string>
+    <string name="auto_gsensor_step5">5. 正面向上</string>
+    <string name="auto_gsensor_step6">6. 正面向下</string>
+    <string name="auto_gsensor_invalid_value">重力传感器数值异常！</string>
+    
+<!--M-sensor-->   
+    <string name="auto_msensor">指南针</string>
+
+<!--P-sensor Adu-->
+    <string name="auto_psensoradu">距离传感校准</string>
+    <string name="auto_psensoradu_info">在距离1厘米处挡住距离传感器，等数值稳定后，点击"开始"按钮</string>
+    <string name="psensor_value">距离为:</string>
+    <string name="psensor_value_old">ç的校准值为:</string>
+    <string name="psensor_value_min">最小距离为:</string>
+    <string name="psensor_value_max">最大距离为:</string>
+    <string name="psensor_adu_success">校准成功</string>
+    <string name="psensor_adu">校准</string>
+    <string name="auto_psa_hint">将手机置于夹具下，点击开始进行校准</string>
+    <string name="auto_psensor_init">检测距离传感器...</string>
+    <string name="auto_psensor_hint">距离为 : </string>
+    <string name="PSensorAdu">距离传感器校准</string>
+            
+<!--P-sensor-->
+    <string name="auto_psensor">"距离传感器"</string>
+    <string name="psensor_near">距离: 近</string>
+    <string name="psensor_far">距离: 远</string>
+<!--Light sensor-->
+    <string name="auto_lsensor">光传感器</string>
+    <string name="auto_lsensor_init">检测光亮度...</string>
+    <string name="light_sensor_light">光线: 亮</string>
+    <string name="light_sensor_dark">光线: 暗</string>
+
+<!--gyroscope-sensor-->
+    <string name="auto_gyroscope">陀螺仪</string>
+   
+<!--Battery-->
+    <string name="auto_battery">"电池"</string>
+    <string name="battery_info_status_label" >"电池状态："</string>
+    <string name="battery_info_power_label" >"是否已插电："</string>    
+    <string name="battery_info_scale_full_label" >"电池总电量："</string>
+    <string name="battery_info_scale_label" >"当前电量："</string>    
+    <string name="battery_info_scale_chg_label" >"充电电量："</string>
+    <string name="battery_info_scale_dis_chg_label" >"放电电量："</string>
+    <string name="battery_info_level_label" >"电池等级："</string>
+    <string name="battery_info_health_label" >"电池运行状况："</string>
+    <string name="battery_info_technology_label" >"电池技术："</string>
+    <string name="battery_info_voltage_label" >"电池电压："</string>
+    <string name="battery_info_voltage_units" >"mV"</string>
+    <string name="battery_info_temperature_label" >"电池温度："</string>
+    <string name="battery_info_temperature_units" >"° C"</string>
+    <string name="battery_info_uptime" >"启动后的时间："</string>
+    <string name="battery_info_awake_battery" >"电池的唤醒时间："</string>
+    <string name="battery_info_awake_plugged" >"充电时的唤醒时间："</string>
+    <string name="battery_info_screen_on" >"屏幕开启时间："</string>
+    <string name="battery_info_status_unknown" >"未知"</string>
+    <string name="battery_info_status_charging" >"正在充电"</string>
+    <string name="battery_info_status_charging_ac" >"（交流电）"</string>
+    <string name="battery_info_status_charging_usb" >"(USB 绑定选项)"</string>
+    <string name="battery_info_status_discharging" >"正在放电"</string>
+    <string name="battery_info_status_not_charging" >"未在充电"</string>
+    <string name="battery_info_status_full" >"已满"</string>
+    <string name="battery_info_power_unplugged" >"未插电"</string>
+    <string name="battery_info_power_ac" >"交流电"</string>
+    <string name="battery_info_power_usb" >"USB"</string>
+    <string name="battery_info_power_ac_usb" >"交流电 + USB"</string>
+    <string name="battery_info_power_unknown" >"未知"</string>
+    <string name="battery_info_health_unknown" >"未知"</string>
+    <string name="battery_info_health_good" >"正常"</string>
+    <string name="battery_info_health_overheat" >"过热"</string>
+    <string name="battery_info_health_dead" >"没电"</string>
+    <string name="battery_info_health_over_voltage" >"过电压"</string>
+    <string name="battery_info_health_unspecified_failure" >"未知错误"</string>
+    <string name="battery_info_current_label">电池电流:</string>
+    <string name="battery_info_current_units">mA</string>
+    
+<!--BT-->
+    <string name="auto_bt">蓝牙</string>
+    <string name="auto_bt_open">正在打开蓝牙设备</string>
+    <string name="auto_bt_search">开始搜索蓝牙设备</string>
+    <string name="auto_bt_not_find">没有找到蓝牙设备</string>
+    <string name="auto_bt_find">检测到蓝牙设备</string>
+    <string name="auto_error">错误</string>
+    
+<!--Wifi-->    
+    <string name="auto_wifi">WiFi</string>
+    <string name="auto_wifi_open">正在打开WiFi</string>
+    <string name="auto_wifi_search">开始搜索WiFi</string>
+    <string name="auto_wifi_not_find">没有发现WiFi设备</string>
+    <string name="auto_wifi_find">找到WiFi设备</string>
+
+<!--GPS-->    
+    <string name="auto_gps">GPS</string>
+    <string name="gps_location_title">位置经纬度:</string>
+    <string name="gps_satellite_title">卫星信息:</string>
+    <string name="gps_source_set">GPS已开启</string>
+    <string name="gps_source_not_set">GPS未开启</string>
+    <string name="GPS">GPS</string>
+    <string name="gps_start">开始</string>
+    <string name="gps_stop">停止</string>
+    <string name="gps_search">GPS查找中...</string>
+    <string name="gps_satellite">卫星</string>
+    <string name="gps_prn">PRN</string>
+    <string name="gps_snr">SNR</string>
+    <string name="gps_longitude">经度: </string>
+    <string name="gps_latitude">纬度: </string>
+    <string name="gps_altitude">海拔: </string>
+    <string name="gps_time">用时: </string>
+      
+<!--Camera-->
+    <string name="auto_camera">照相机</string>
+    <string name="camera_switch">前后切换</string>
+    <string name="camera_take">拍照</string>
+
+<!--Receiver-->
+    <string name="auto_receiver">受话器</string>
+    <string name="audio_receiver_info">请检查受话器</string>
+
+<!--NFC-->    
+    <string name="auto_nfc">NFC</string>
+    <string name="auto_nfc_info">请刷NFC标签</string>
+    <string name="auto_nfc_not_support">手机不支持NFC</string>
+
+<!--Battery power-->
+    <string name="battery_power">"电池电量"</string>
+        
+<!--Other-->    
+    <string name="auto_backlight">背光</string>
+    <string name="auto_earphone">耳机</string>
+    <string name="auto_sensor">传感器</string>
+
+    <string name="test_cp_crash">测试CP死机</string>
+    <string name="test_ap_crash">测试AP死机</string>
+    <string name="crash_dump_switch">死机Dump保存</string>
+    <string name="crash_dump_switch_on">保存</string>
+    <string name="crash_dump_switch_off">不保存(立刻重启)</string>
+
+    
+    <string name="master_clear_title">恢复出厂设置</string>
+    <string name="master_clear_summary">清除手机上的所有数据</string>
+    <string name="master_clear_info">恢复出厂设置中...</string>
+    <string name="TouchPanel">触摸屏</string>
+
+    
+    <string name="Vibration">振动</string>
+    <string name="vibHint">点击下方按钮使振动开始/停止</string>
+    <string name="vibration_on">开始振动</string>
+    <string name="vibration_off">停止振动</string>
+
+    
+    <string name="test_start">开始</string>
+    <string name="test_stop">停止</string>
+
+    
+    <string name="sensorTest">传感器</string>
+    <string name="gsensor_test">重力感应测试</string> 
+    <string name="sen_acc">加速传感器</string> 
+    <string name="sen_ori">方向传感器</string> 
+    <string name="Not_detected">未发现设备</string>
+    <string name="Detected">发现设备</string>
+    <string name="No_sensor">无传感</string>
+    <string name="prosensor_test">距离传感器测试</string>
+    <string name="sen_list">传感器列表</string>
+    <string name="sen_light">光线传感</string>
+    <string name="sen_proximity">距离传感</string>
+    
+   
+    <string name="memory_test">内存测试</string>
+    <string name="DDR">DDR:</string>
+    <string name="ddr_hint">输入数字 </string>
+    <string name="test_button">测试</string>
+    <string name="ddr_result">测试结果为:</string>
+    <string name="suc_result">内存申请成功!\n申请使用了  </string>
+    <string name="microsecond">  微秒</string>
+    <string name="fal_result">内存申请失败 !</string>
+    <string name="nv_test">NV 测试</string>
+    <string name="NV_backup">备份</string>
+    <string name="NV_resume">恢复</string>
+    <string name="NV_earse">擦除</string>
+
+    <string name="memory_use">你已使用</string>
+    <string name="memory_space">M 内存空间</string>
+    <string name="backup_suc">备份成功</string>
+    <string name="backup_fail">备份失败</string>
+    <string name="resume_suc">恢复成功</string>
+    <string name="resume_fail">恢复失败</string>
+    <string name="earse_suc">擦除成功</string>
+    <string name="earse_fail">擦除失败</string>
+    <string name="backup_ing">备份中</string>
+    <string name="resume_ing">恢复中</string>
+    <string name="earse_ing">擦除中</string>
+    <string name="nv_errror">错误</string>
+  
+    <string name="ElectricityTest">ElectricityTest</string>
+    <string name="backlight_mode">BackLight mode</string>
+    <string name="keyboardlight_mode">keyboardLight mode</string>
+    <string name="bt_mode">BlueTooth</string>
+    <string name="wifi_mode">WiFi</string>
+    <string name="camera_mode">Camera</string>
+    <string name="fm_mode">FM</string>
+    <string name="TouchPanel_mode">TouchPanel</string>
+    <string name="PA_mode">PA</string>
+    <string name="RF_mode">RF</string>
+    <string name="vibrate_mode">Vibrate</string>
+
+    <string name="ligsensor_mode">Light Sensor</string>
+    <string name="orisensor_mode">Orientation Sensor</string>
+    <string name="accsensor_mode">Accelerometer Sensor</string>
+    <string name="magsensor_mode">Magnetic Sensor</string>
+    <string name="prosensor_mode">Proximity Sensor</string>
+    <string name="micreceiver_mode">Mic Receiver</string>
+    <string name="nandmaker">芯片厂商 : </string>
+    <string name="unknown">未知</string>
+
+
+    <string name="ScreenHint">Here is the threshold ranges of orientation angle to transition into other orientation states.</string>
+    <string name="ScreenRotation">ScreenRotation</string>
+    <string name="fromRot0">Transfer from ROTATION_0:</string>
+    <string name="fromRot90">Transfer from ROTATION_90:</string>
+    <string name="fromRot270">Transfer from ROTATION_270:</string>
+    <string name="toRot0">T0 ROTATION_0:</string>
+    <string name="toRot90">T0 ROTATION_90:</string>
+    <string name="toRot270">T0 ROTATION_270:</string>
+    <string name="to">~</string>
+    <string name="SetVal">Set angle</string>
+    <string name="RecVal">Angle Reset</string>
+
+    <string name="notwork">Not Work</string>
+    <string name="enableTouch">Press camera key to enable it</string>
+    <string name="reboot">Reboot</string>
+
+    <string name="sen_mag">Magnetic Field</string>
+    <string name="SensorAdjust">SensorAdjust</string>
+    <string name="setScreen">Set Value</string>
+    
+    <string name="psen_time">P Sensor Reactive Time</string>
+    <string name="psen_time_hint">Set a value(100ms~1000ms) for Proximity Sensor to Reactive</string>
+    <string name="psen_time_ms">ms</string>
+    <string name="snHint">Press the Button to reset the sn </string>
+         
+
+    <string name="auto_title">开始自动测试</string>
+    <string name="auto_result">测试结果</string>
+    <string name="auto_finish_key">结束键：退出</string>
+    <string name="auto_start">开始</string>
+    <string name="auto_report">报告</string>
+    <string name="auto_yes">是</string>
+    <string name="auto_success">成功</string>
+    <string name="auto_fail">失败</string>
+    <string name="auto_continue">继续</string>
+    <string name="auto_retest">重测</string>
+    
+    <string name="auto_menu">菜单键：重测</string>
+    <string name="text_fail">测试失败，仍然继续？</string>
+    <string name="auto_result_hint">测试结果为：</string>
+    <string name="auto_num_hint">测试失败：</string>
+    <string name="auto_exit">退出</string>
+    <string name="auto_finish">结束</string>
+    <string name="auto_wait_hint">测试已做</string>
+    <string name="auto_finish_hint">所有测试已做</string>
+    <string name="Press_to_test">按此测试</string>
+    <string name="tested">已测试</string>
+        
+    <string name="nfcTest">NFC测试</string>           
+    <string name="test_url">常用测试网站</string>
+    
+    <string name="imei_write">更改IMEI</string>
+    <!--Gozone start BID xxx zhangjinguo: add for IMEI and MEID operate --> 
+    <string name="imeiAndMeidTest">IMEI和MEID测试</string>   
+    <string name="imeiTest">IMEI测试</string>           
+    <string name="imeiTest_summary">IMEI读写操作</string>
+    <string name="updateIMEI">更新</string>
+    <string name="readIMEI">读取</string>
+    <string name="updateIMEI_fail">IMEI更新失败</string>
+    <string name="updateIMEI_success">IMEI更新成功</string>
+    <string name="getIMEI_fail">获取IMEI失败</string>
+    <string name="getIMEI_success">获取IMEI成功</string>
+              
+    <string name="imei2Test_summary">IMEI2读写操作</string>
+    <string name="readIMEI2">读取</string>
+    <string name="updateIMEI2">更新</string>
+    <string name="updateIMEI2_fail">IMEI2更新失败</string>
+    <string name="updateIMEI2_success">IMEI2更新成功</string>
+    <string name="getIMEI2_fail">获取IMEI2失败</string>
+    <string name="getIMEI2_success">获取IMEI2成功</string>
+    
+    <string name="meidTest">MEID测试</string>           
+    <string name="meidTest_summary">MEID读写操作</string>
+    <string name="updateMEID">更新</string>
+    <string name="readMEID">读取</string>
+    <string name="updateMEID_fail">MEID更新失败</string>
+    <string name="updateMEID_success">MEID更新成功</string>
+    <string name="getMEID_fail">获取MEID失败</string>
+    <string name="getMEID_success">获取MEID成功</string>
+    <string name="update_IMEI_MEID">同时更新IMEI和MEID</string>
+    <string name="update_waiting_msg">更新中，请稍候。。。</string>
+    <!--Gozone end BID xxx-->
+    <string name="usb_debug">USB调试端口</string>
+    <string name="bootanimation_change">开机动画更改</string>
+    <string name="otg_switch">OTG切换</string>
+<!-- not translate-->
+
+    <string name="key_1">1</string>
+    <string name="key_2">2</string>
+    <string name="key_3">3</string>
+    <string name="key_4">4</string>
+    <string name="key_5">5</string>
+    <string name="key_6">6</string>
+    <string name="key_7">7</string>
+    <string name="key_8">8</string>
+    <string name="key_9">9</string>
+    <string name="key_0">0</string>
+
+    <string name="key_Q">Q</string>
+    <string name="key_W">W</string>
+    <string name="key_E">E</string>
+    <string name="key_R">R</string>
+    <string name="key_T">T</string>
+    <string name="key_Y">Y</string>
+    <string name="key_U">U</string>
+    <string name="key_I">I</string>
+    <string name="key_O">O</string>
+    <string name="key_P">P</string>
+
+    <string name="key_A">A</string>
+    <string name="key_S">S</string>
+    <string name="key_D">D</string>
+    <string name="key_F">F</string>
+    <string name="key_G">G</string>
+    <string name="key_H">H</string>
+    <string name="key_J">J</string>
+    <string name="key_K">K</string>
+    <string name="key_L">L</string>
+
+    <string name="key_Z">Z</string>
+    <string name="key_X">X</string>
+    <string name="key_C">C</string>
+    <string name="key_V">V</string>
+    <string name="key_B">B</string>
+    <string name="key_N">N</string>
+    <string name="key_M">M</string>
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:title="@string/app_name">
+  <Preference
+    android:key="AutoTest"
+    android:title="@string/AutoTest"
+    android:summary="@string/Press_to_test">
+    <intent
+      android:action="android.intent.action.MAIN"
+      android:targetPackage="com.android.ServiceMenu"
+      android:targetClass="com.android.ServiceMenu.Auto" />
+  </Preference>
+
+  <Preference
+    android:key="ManuTest"
+    android:title="@string/ManuTest"
+    android:summary="@string/Press_to_test">
+    <intent
+      android:action="android.intent.action.MAIN"
+      android:targetPackage="com.android.ServiceMenu"
+      android:targetClass="com.android.ServiceMenu.ManuTest" />
+  </Preference>
+<!--
+  <Preference
+    android:key="DebugTest"
+    android:title="@string/ForDebug"
+    android:summary="@string/Press_to_test">
+    <intent
+      android:action="android.intent.action.MAIN"
+      android:targetPackage="com.android.ServiceMenu"
+      android:targetClass="com.android.ServiceMenu.ForDebug" />
+  </Preference>
+-->    
+  <Preference
+    android:key="FactoryRecover"
+    android:title="@string/master_clear_title"
+    android:summary="@string/master_clear_summary">
+    <intent
+      android:action="android.intent.action.MAIN"
+      android:targetPackage="com.android.ServiceMenu"
+      android:targetClass="com.android.ServiceMenu.MasterClear" />
+  </Preference>
+
+</PreferenceScreen>

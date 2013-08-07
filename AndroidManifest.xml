@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.android.ServiceMenu"
+  android:versionCode="1"
+  android:versionName="1.0"
+  android:sharedUserId="android.uid.system">
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.HARDWARE_TEST" />
+  <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+  <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+  <uses-permission android:name="android.permission.BLUETOOTH" /> 
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />       
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />       
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+  <uses-permission android:name="android.permission.READ_USER_DICTIONARY"/>
+  <uses-permission android:name="android.permission.MASTER_CLEAR" />
+  <uses-permission android:name="android.permission.ACCESS_GPS"/> 
+  <uses-permission android:name="android.permission.REBOOT"/> 
+  <uses-permission android:name="android.permission.VIBRATE"/> 
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> 
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> 
+  <uses-permission android:name="android.permission.FACTORY_TEST"/> 
+  <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/> 
+  <uses-permission android:name="android.permission.RECORD_AUDIO"/> 
+  <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/> 
+  <!-- android:screenOrientation="portrait" -->
+  <uses-sdk android:minSdkVersion="7" />
+  <!--Gozone start BID 9299 daiyuanqin: add android:name="com.broadcom.bt.service.fm.FmServiceManager" and uses-library android:name="com.broadcom.bt.service.fm" -->
+  <application android:icon="@drawable/icon" android:label="@string/app_name">
+  	<!--Gozone end BID 9299 -->
+    <activity android:name=".ServiceMenu"
+              android:label="@string/app_name"
+              android:screenOrientation="portrait"
+              android:launchMode="singleInstance">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.DEFAULT" />
+				<!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+      </intent-filter>
+    </activity>
+    <activity android:name=".ManuTest"
+              android:label="@string/ManuTest"
+    					android:screenOrientation="portrait">
+    </activity>
+    <!--  android:screenOrientation="portrait" -->
+    <activity android:name=".ForDebug"
+              android:label="@string/app_name_dev"
+              android:screenOrientation="portrait">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.DEFAULT" />
+				<!--<category android:name="android.intent.category.LAUNCHER" />-->
+      </intent-filter>
+    </activity>
+
+    <activity android:name=".VersionShow"
+              android:label="@string/Version"
+              android:screenOrientation="portrait">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>              
+    </activity>
+
+    <activity android:name=".TouchPanel"
+              android:theme="@style/FullScreenTheme"
+              android:screenOrientation="portrait">
+    </activity>
+
+    <activity android:name=".Vibration"
+              android:label="@string/Vibration"
+              android:process="com.android.phone"
+              android:screenOrientation="portrait">
+    </activity>
+
+    <activity android:name=".SensorTest"
+              android:label="@string/sensorTest"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".MSensorTest"
+              android:label="@string/auto_msensor"
+              android:screenOrientation="portrait">
+    </activity>    
+
+    <activity android:name=".Auto"
+              android:label="@string/AutoTest"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoMusic"
+              android:label="@string/audio_speaker"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoWaitActivity"
+              android:label="@string/auto_result"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoFailActivity"
+              android:label="@string/auto_result"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoReport"
+              android:label="@string/auto_result"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoTouch"
+              android:label="@string/auto_touch"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoKey"
+              android:label="@string/auto_key"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoBacklight"
+              android:label="@string/auto_key_backlight"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoFlash"
+              android:label="@string/auto_flash"
+              android:screenOrientation="portrait">
+    </activity>    
+    <activity android:name=".AutoBrightness"
+              android:label="@string/auto_brightness"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoPalette"
+              android:label="@string/auto_palette"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoAudioloop"
+              android:label="@string/auto_audioloop"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoEarphone"
+              android:label="@string/auto_earphone_audioloop"
+              android:screenOrientation="portrait">
+    </activity>
+
+    <activity android:name=".AutoEarphoneInsert"
+              android:label="@string/auto_earphone_insert"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoEarphoneRemove"
+              android:label="@string/auto_earphone_remove"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoEarphoneMusic"
+              android:label="@string/auto_earphone_music"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoEarphoneKey"
+              android:label="@string/auto_earphone_key"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoTraceInfo"
+              android:label="@string/auto_trace_info_title"
+              android:screenOrientation="portrait">
+    </activity>
+
+    <activity android:name=".AutoFm"
+              android:label="@string/auto_fm"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoCamera"
+              android:configChanges="orientation|keyboardHidden"
+              android:theme="@style/CustomTheme"
+              android:screenOrientation="landscape"
+              android:clearTaskOnLaunch="true"
+              android:taskAffinity="android.task.camera"
+              android:label="@string/auto_camera">
+    </activity>
+    <activity android:name=".AutoLSensor"
+              android:label="@string/auto_lsensor"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoSensor"
+              android:label="@string/auto_sensor"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoSd"
+              android:label="@string/auto_sd"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoVibrate"
+              android:label="@string/auto_vibrate"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoVersion"
+              android:label="@string/auto_version"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoBattery"
+              android:label="@string/auto_battery"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoSim"
+              android:label="@string/auto_sim"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoMSensor"
+              android:label="@string/auto_msensor"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoBT"
+              android:label="@string/auto_bt"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoWiFi"
+              android:label="@string/auto_wifi"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoGPS"
+              android:label="@string/auto_gps"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoPSensor"
+              android:label="@string/auto_psensor"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoGyroscopeSensor"
+              android:label="@string/auto_gyroscope"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoGSensor"
+              android:label="@string/auto_gsensor"
+              android:screenOrientation="portrait">
+    </activity>  
+    <!-- android:process="com.android.phone" -->
+    <activity android:name=".AutoFinish"
+              android:label="@string/auto_result"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoUsb"
+              android:label="@string/auto_usb"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoReceiver"
+              android:label="@string/auto_receiver"
+              android:screenOrientation="portrait">
+    </activity>
+    <activity android:name=".AutoNfc"
+              android:label="@string/auto_nfc"
+              android:screenOrientation="portrait">
+    </activity>
+
+    
+    <activity android:name=".PSensorAdu"
+              android:label="@string/PSensorAdu"
+              android:screenOrientation="portrait">
+    </activity>    
+    <activity android:name=".MasterClear"
+              android:label="@string/master_clear_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+    </activity>
+    <!--Gozone start BID xxx zhangjinguo: add for IMEI and MEID operate -->
+    <activity android:name=".IMEITest"
+              android:label="@string/imeiAndMeidTest"
+              >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+    </activity>
+    <!--Gozone end BID xxx-->
+    <activity android:name=".TestUrl"
+              android:label="@string/test_url"
+              android:screenOrientation="portrait">
+    </activity>
+
+    <activity android:name=".BatteryTest"
+              android:label="@string/battery_power"
+              android:screenOrientation="portrait">
+    </activity>       
+
+    <receiver android:name="ServiceMenuBroadcastReceiver">
+      <intent-filter>
+           <action android:name="android.provider.Telephony.SECRET_CODE" />
+           <data android:scheme="android_secret_code" android:host="1923" />
+      </intent-filter>
+    </receiver>
+
+    <receiver android:name="ServiceMenuPcbBroadcastReceiver">
+      <intent-filter>
+           <action android:name="android.provider.Telephony.SECRET_CODE" />
+           <data android:scheme="android_secret_code" android:host="1924" />
+      </intent-filter>
+    </receiver>
+
+    <receiver android:name="ServiceMenuDebugReceiver">
+      <intent-filter>
+           <action android:name="android.provider.Telephony.SECRET_CODE" />
+           <data android:scheme="android_secret_code" android:host="147" />
+      </intent-filter>
+      <intent-filter>
+           <action android:name="com.qualcomm.otg.open" />
+      </intent-filter>
+      <intent-filter>
+           <action android:name="com.qualcomm.otg.close" />
+      </intent-filter>
+    </receiver>  
+    <receiver android:name="ServiceMenuVersionReceiver">
+      <intent-filter>
+           <action android:name="android.provider.Telephony.SECRET_CODE" />
+           <data android:scheme="android_secret_code" android:host="789" />
+      </intent-filter>
+    </receiver>    
+    
+    <!--Gozone start BID xxx zhangjinguo: add for IMEI and MEID operate -->
+    <uses-library
+         android:name="com.android.qualcomm.qcnvitems"></uses-library>
+    <uses-library
+         android:name="com.android.qualcomm.qcrilhook"></uses-library> 
+    <!--Gozone end BID xxx--> 
+  </application>
+</manifest> 

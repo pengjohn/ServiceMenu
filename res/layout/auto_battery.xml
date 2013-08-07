@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    > 
+<!-- Battery Status -->
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/battery_info_status_label" style="@style/info_label" />
+        <TextView android:id="@+id/status" style="@style/info_value" />
+    </LinearLayout>
+
+    <!-- Battery Status -->
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/battery_info_power_label" style="@style/info_label" />
+        <TextView android:id="@+id/power" style="@style/info_value" />
+    </LinearLayout>
+
+    <!-- Battery Level -->
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/battery_info_scale_label" style="@style/info_label" />
+        <TextView android:id="@+id/level" style="@style/info_value" />
+    </LinearLayout>
+
+    <!-- Battery Scale -->
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/battery_info_scale_full_label" style="@style/info_label" />
+        <TextView android:id="@+id/scale" style="@style/info_value" />
+    </LinearLayout>
+    
+    <!-- Battery Health -->
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/battery_info_health_label" style="@style/info_label" />
+        <TextView android:id="@+id/health" style="@style/info_value" />
+    </LinearLayout>
+
+    <!-- Battery Voltage -->
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/battery_info_voltage_label" style="@style/info_label" />
+        <TextView android:id="@+id/voltage" style="@style/info_value" />
+    </LinearLayout>
+    
+    <!--Gozone start BID 11668 qiuchangping:for berry current -->
+    <!-- Battery Current -->
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/battery_info_current_label" style="@style/info_label" />
+        <TextView android:id="@+id/current" style="@style/info_value" />
+    </LinearLayout>
+    <!--Gozone end BID 11668-->
+    
+    <!-- Battery Temperature -->
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/battery_info_temperature_label" style="@style/info_label" />
+        <TextView android:id="@+id/temperature" style="@style/info_value" />
+    </LinearLayout>
+
+    <!-- Battery Technology -->
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/battery_info_technology_label" style="@style/info_label" />
+        <TextView android:id="@+id/technology" style="@style/info_value" />
+    </LinearLayout>
+
+    <!-- Uptime -->
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/battery_info_uptime" style="@style/info_label" />
+        <TextView android:id="@+id/uptime" style="@style/info_value" />
+    </LinearLayout>
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom">
+    <Button
+    android:id="@+id/battery_success"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight = "1"
+    android:layout_gravity="bottom"
+    android:text="@string/auto_success">
+    </Button>
+    <Button
+    android:id="@+id/battery_fail"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight = "1"
+    android:layout_gravity="bottom"
+    android:text="@string/auto_fail">
+    </Button>
+    </LinearLayout>
+</LinearLayout>
