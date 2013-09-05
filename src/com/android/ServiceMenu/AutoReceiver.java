@@ -101,7 +101,7 @@ public class AutoReceiver extends AutoItemActivity implements OnClickListener {
       mMediaPlayer.start();
       mMediaPlayer.setLooping(true);
     }
-    mAudioManager.setMode(AudioManager.MODE_IN_CALL);
+    mAudioManager.setMode(AudioManager.MODE_IN_COMMUNICATION);
      
     Message msg = new Message();
     msg.what = WAIT_INIT_EVENT;

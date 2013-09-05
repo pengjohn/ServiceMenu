@@ -4,33 +4,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     > 
-<TextView  
+    <TextView  
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" 
     android:textSize="20dip"
     android:paddingTop="30dip"
     android:text="@string/auto_audioloop_info"
     />
+    <TextView
+    android:id="@+id/mic_amplitude"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="20dip"
+    android:paddingTop="30dip"
+    />    
     <LinearLayout
     android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:layout_gravity="bottom">
-    <Button
-    android:id="@+id/audio_success"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight = "1"
-    android:layout_gravity="bottom"
-    android:text="@string/auto_success">
-    </Button>
-    <Button
-    android:id="@+id/audio_fail"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight = "1"
-    android:layout_gravity="bottom"
-    android:text="@string/auto_fail">
-    </Button>
+        <Button
+        android:id="@+id/audio_success"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight = "1"
+        android:layout_gravity="bottom"
+        android:text="@string/auto_success">
+        </Button>
+        <Button
+        android:id="@+id/audio_fail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight = "1"
+        android:layout_gravity="bottom"
+        android:text="@string/auto_fail">
+        </Button>
     </LinearLayout>
 </LinearLayout>

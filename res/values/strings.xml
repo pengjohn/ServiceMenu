@@ -66,8 +66,9 @@
 <!--AudioLoop-->    
     <string name="auto_audioloop">音频回环</string>
     <string name="audiolooperHint">回环测试中...</string>
-    <string name="auto_audioloop_info">请检查音频回环</string>   
-    
+    <string name="auto_audioloop_info">请检查音频回环</string>
+    <string name="auto_audioloop_mic_amplitude">MIC检测</string>
+        
 <!--USB-->    
     <string name="auto_usb">USB</string>            
     <string name="auto_usb_info">请按以下顺序操作</string>

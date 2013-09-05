@@ -143,15 +143,11 @@ public class AutoEarphone extends AutoItemActivity implements OnClickListener {
     myHandler.sendMessageDelayed(msg, WAIT_INIT_TIME);  
     
     mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-		mAudioManager.setStreamVolume(AudioManager.STREAM_VOICE_CALL,
-									3,AudioManager.FLAG_PLAY_SOUND);
+
     recBufSize = AudioRecord.getMinBufferSize(frequency, channelConfiguration, audioEncoding);
     playBufSize=AudioTrack.getMinBufferSize(frequency, channelConfiguration, audioEncoding);
-    audioRecord = new AudioRecord(MediaRecorder.AudioSource.MIC, frequency,  
-                channelConfiguration, audioEncoding, recBufSize);  
-    audioTrack = new AudioTrack(AudioManager.STREAM_VOICE_CALL, frequency,  
-                channelConfiguration, audioEncoding,  
-                playBufSize, AudioTrack.MODE_STREAM); 
+    audioRecord = new AudioRecord(MediaRecorder.AudioSource.MIC, frequency, channelConfiguration, audioEncoding, recBufSize);  
+    audioTrack = new AudioTrack(AudioManager.STREAM_VOICE_CALL, frequency, channelConfiguration, audioEncoding, playBufSize, AudioTrack.MODE_STREAM); 
     
     audioTrack.setStereoVolume(90, 90);
 	  isRecording = true;  

@@ -32,20 +32,25 @@ import android.widget.SeekBar;
 import android.widget.Toast; 
 import android.view.WindowManager;
 
+import android.widget.TextView;
+
 public class AutoAudioloop extends AutoItemActivity implements OnClickListener {
 
     private Button sucBtn,falBtn;
+    private TextView micAmplitudeTxt;
     private AudioManager mAudioManager;
     private static final String TAG = "AutoAudioloop";
+    public static final int AUDIOLOOP_MIC_AMPLITUDE = 0xc1;
 
-	  boolean isRecording = false;
-	  static final int frequency = 44100;  
-	  static final int channelConfiguration = AudioFormat.CHANNEL_CONFIGURATION_MONO;  
-	  static final int audioEncoding = AudioFormat.ENCODING_PCM_16BIT;  
-	  int recBufSize,playBufSize;  
-	  AudioRecord audioRecord;  
-	  AudioTrack audioTrack; 
-
+	boolean isRecording = false;
+	boolean mMicTestOK = false;
+	static final int frequency = 44100;  
+	static final int channelConfiguration = AudioFormat.CHANNEL_CONFIGURATION_MONO;  
+	static final int audioEncoding = AudioFormat.ENCODING_PCM_16BIT;  
+	int recBufSize,playBufSize;  
+	AudioRecord audioRecord;  
+	AudioTrack audioTrack; 
+    int mMicAmplitudeCount = 0;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -56,10 +61,11 @@ public class AutoAudioloop extends AutoItemActivity implements OnClickListener {
         falBtn = (Button)findViewById(R.id.audio_fail);
         sucBtn.setOnClickListener(this);
         falBtn.setOnClickListener(this);
+        micAmplitudeTxt = (TextView)findViewById(R.id.mic_amplitude);
 
+        sucBtn.setEnabled(false);
         if(bWaitInitTime)
         {
-          sucBtn.setEnabled(false);
           falBtn.setEnabled(false);
         }          
     }
@@ -94,9 +100,20 @@ public class AutoAudioloop extends AutoItemActivity implements OnClickListener {
     public void handleMessage(Message msg){
       switch(msg.what){
       case WAIT_INIT_EVENT:
-        sucBtn.setEnabled(true);
-        falBtn.setEnabled(true);        
-        break;    			
+        falBtn.setEnabled(true);
+        break;
+      case AUDIOLOOP_MIC_AMPLITUDE:
+       if(msg.arg1 > 2800)
+       {
+            mMicAmplitudeCount ++;
+            if(mMicAmplitudeCount >= 20)
+            {
+                mMicAmplitudeCount = 20;
+                sucBtn.setEnabled(true);
+            }
+       }
+        micAmplitudeTxt.setText(getResources().getText(R.string.auto_audioloop_mic_amplitude)+":"+msg.arg1+"["+mMicAmplitudeCount+"/20]");
+        break;
       default:
         break;
       }
@@ -113,25 +130,22 @@ public class AutoAudioloop extends AutoItemActivity implements OnClickListener {
     myHandler.sendMessageDelayed(msg, WAIT_INIT_TIME);  
     
     mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-		mAudioManager.setStreamVolume(AudioManager.STREAM_VOICE_CALL,
-									3,AudioManager.FLAG_PLAY_SOUND);
+
     recBufSize = AudioRecord.getMinBufferSize(frequency, channelConfiguration, audioEncoding);
     playBufSize=AudioTrack.getMinBufferSize(frequency, channelConfiguration, audioEncoding);
-    audioRecord = new AudioRecord(MediaRecorder.AudioSource.MIC, frequency,  
-                channelConfiguration, audioEncoding, recBufSize);  
-    audioTrack = new AudioTrack(AudioManager.STREAM_VOICE_CALL, frequency,  
-                channelConfiguration, audioEncoding,  
-                playBufSize, AudioTrack.MODE_STREAM); 
+    audioRecord = new AudioRecord(MediaRecorder.AudioSource.MIC, frequency, channelConfiguration, audioEncoding, recBufSize);  
+    audioTrack = new AudioTrack(AudioManager.STREAM_VOICE_CALL, frequency, channelConfiguration, audioEncoding, playBufSize, AudioTrack.MODE_STREAM); 
     
     audioTrack.setStereoVolume(90, 90);
-	  isRecording = true;  
+	isRecording = true;
+	mMicAmplitudeCount = 0;
     new RecordPlayThread().start();
   }
   @Override
   protected void onPause() {
   	myHandler.removeMessages(WAIT_INIT_EVENT);
   	
-		isRecording = false;  
+	isRecording = false;  
     super.onPause();
   }
 
@@ -174,9 +188,21 @@ public class AutoAudioloop extends AutoItemActivity implements OnClickListener {
                   nBufferIndexPlay = (nBufferIndexRecord+BUFFER_COUNT-1)%BUFFER_COUNT;
                   if(tmpBuf[nBufferIndexPlay] != null)
                       audioTrack.write(tmpBuf[nBufferIndexPlay], 0, tmpBuf[nBufferIndexPlay].length);
-                  
+
+                  if(mMicTestOK == false)
+                  {
+                   int volume = 0;
+                   for (int i = 0; i < buffer.length; i++) 
+                   { 
+                        volume += (buffer[i] * buffer[i]); 
+                   }
+                   Message message = new Message();
+                   message.what = AutoAudioloop.AUDIOLOOP_MIC_AMPLITUDE;
+                   message.arg1 = volume/bufferReadResult;
+                   AutoAudioloop.this.myHandler.sendMessage(message);
+                  }
                   //Bufferindex +1
-                  nBufferIndexRecord = (nBufferIndexRecord+1)%BUFFER_COUNT;
+                  nBufferIndexRecord = (nBufferIndexRecord+1)%BUFFER_COUNT;                  
               } 
               audioTrack.stop();
               audioRecord.stop();
